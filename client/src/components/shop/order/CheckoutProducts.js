@@ -110,7 +110,7 @@ export const CheckoutComponent = (props) => {
                       type="number"
                       id="phone"
                       className="border px-4 py-2"
-                      placeholder="+880"
+                      placeholder="+91"
                     />
                   </div>
                   <DropIn
@@ -196,7 +196,7 @@ const CheckoutProducts = ({ products }) => {
                     Quantitiy : {quantity(product._id)}
                   </div>
                   <div className="font-semibold text-gray-600 text-sm">
-                    Subtotal : ${subTotal(product._id, product.pPrice)}.00
+                    Subtotal : Rs {subTotal(product._id, product.pPrice)}.00
                   </div>
                 </div>
               </div>
